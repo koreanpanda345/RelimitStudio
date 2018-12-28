@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Damage : MonoBehaviour {
-	public float minorEnemyDamage;
-	public float mildEnemyDamage;
-	public float MajorEnemyDamage;
-	public float BossEnemyDamage;
+	public int minorEnemyDamage;
+	public int mildEnemyDamage;
+	public int MajorEnemyDamage;
+	public int BossEnemyDamage;
 	
-	void Start(){
-		minorEnemyDamage = 3f;
-		mildEnemyDamage = 5f;
-		MajorEnemyDamage = 10f;
-		BossEnemyDamage = 20f;
+	void EnemyDamage(){
+		minorEnemyDamage = 3;
+		mildEnemyDamage = 5;
+		MajorEnemyDamage = 10;
+		BossEnemyDamage = 20;
 	}
 }

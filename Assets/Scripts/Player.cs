@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
-	public float maxHealth;
-	private float health;
-	
-	void Start(){
-		maxHealth = 100f;
+	public int maxHealth;
+	private int health;
+		void Awake(){
+		SetDefault();
 	}
-	void Update(){
-		
+	public void TakeDamage(int _amount){
+		health -= _amount;
+
+		Debug.Log(transform.name + "Now Has " + health + " health");
+	}
+	public void SetDefault(){
+		health = maxHealth;
 	}
 }
