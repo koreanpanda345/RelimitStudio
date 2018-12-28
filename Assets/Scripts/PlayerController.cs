@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour {
         //this is tellint the program how fast the player will move.
         moveVelocity = moveInput.normalized * speed;
     }
-    //FixedUpdate, is like the Update method, but it makes each FixedUpdated frame to be more smoother. this is more for the movements or actions for the character.
+    //FixedUpdate, is like the Update method, but it is used to mess with the physics of the game, while keeping it as smooth as possible.
     void FixedUpdate(){
         //this will tell the program where to move the player.
         rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
