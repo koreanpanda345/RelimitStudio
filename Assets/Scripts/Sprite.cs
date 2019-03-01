@@ -3,7 +3,7 @@ public class Sprite : MonoBehaviour
 {
   //the animator Method is going to be used to mess with sprite sheets
     private Animator animator;
-  //Testing the webhook
+  
     // Use this for initialization
     void Start()
     {
